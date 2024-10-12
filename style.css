@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh; /* Make the body fill the viewport height */
+    position: relative; /* This allows the dot to be positioned absolutely within the body */
+}
+
+#dot {
+    width: 10px;
+    height: 10px;
+    background-color: red; /* Color of the dot */
+    border-radius: 50%; /* Make the dot circular */
+    position: absolute; /* Position it absolutely within the body */
+    pointer-events: none; /* Prevent the dot from interfering with mouse events */
+    transition: transform 0.1s linear; /* Smooth movement */
+}
